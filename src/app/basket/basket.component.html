@@ -1,0 +1,18 @@
+<div class="gray-bg"></div>
+
+<div class="flight-history">
+
+  <div class="flight-history-inside card">
+
+    <h2>Your Basket</h2>
+
+    <ul class="list-group">
+
+      <li *ngFor="let f of flights" class="list-group-item">
+        <p>{{f.from}} - {{f.to}}</p>
+      </li>
+     
+
+    </ul>
+  </div>
+</div>

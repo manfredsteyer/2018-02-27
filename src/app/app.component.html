@@ -1,0 +1,23 @@
+<div class="wrapper">
+  <div class="sidebar" data-background-color="white" data-active-color="danger">
+      <sidebar-cmp></sidebar-cmp>
+  </div>
+  <div class="main-panel">
+      <navbar-cmp></navbar-cmp>
+      <div class="content">
+
+        <!--
+          <flight-search></flight-search>
+        -->
+
+        <div class="col-md-9">
+          <router-outlet></router-outlet>
+        </div>
+        <div class="col-md-3">
+          <a (click)="toggle()">Toggle Basket</a>
+          <basket *ngIf="showBasket"></basket>
+        </div>
+      </div>
+  </div>
+</div>
+
